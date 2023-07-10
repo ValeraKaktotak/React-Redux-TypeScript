@@ -12,7 +12,8 @@ export const fetchUsers = () => {
         } catch (error) {
             dispatch({
                 type: UserActionTypes.FETCH_USERS_ERROR, 
-                payload: 'Произошла ошибка'})
+                payload: 'Произошла ошибка'    
+            })
         }
     }
 }
