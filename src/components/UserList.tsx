@@ -8,7 +8,7 @@ import type {} from 'redux-thunk/extend-redux'
 const UserList: React.FC = () => {
     const {error, loading, users} = useTypedSelector(state => state.users)
     const dispatch = useTypedDispatch()
-
+    
     useEffect(()=>{
         dispatch(fetchUsers())
     }, [])
